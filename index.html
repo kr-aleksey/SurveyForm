@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Which programming language do you prefer?</p>
+        </header>
+        <form action="" id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" placeholder="Enter your name" id="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" placeholder="Enter your email" id="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Age</label>
+                <input type="number" placeholder="Enter your age" id="number" class="form-control" min="1" max="100"
+                    required>
+            </div>
+            <div class="form-group">
+                <label for="dropdown" id="dropdown-label">Your favorit languge</label>
+                <select name="dropdown" id="dropdown" class="form-control" required>
+                    <option disabled selected value="">Select your favorit languge</option>
+                    <option value="1">Basic</option>
+                    <option value="2">C</option>
+                    <option value="3">C#</option>
+                    <option value="4">C++</option>
+                    <option value="5">Go</option>
+                    <option value="6">Python</option>
+                    <option value="7">Java</option>
+                    <option value="other-language">other</option>
+                </select>
+            </div>
+            <div class="form-group" id="block-other">
+                <label for="other-language">Your version</label>
+                <input type="text" placeholder="Your version" id="other-language" class="form-control">
+            </div>
+            <div class="form-group">
+                <legend>Professional interest area</legend>
+                <label>
+                    <input type="checkbox" name="interest" value = "System" class="input-checkbox">
+                    System programming
+                </label>
+                <label>
+                    <input type="checkbox" name="interest" value = "Back-end" class="input-checkbox">
+                    Back-end
+                </label>
+                <label>
+                    <input type="checkbox" name="interest" value = "Front-end" class="input-checkbox">
+                    Front-end
+                </label>
+                <label>
+                    <input type="checkbox" name="interest" value = "Mobile" class="input-checkbox">
+                    Mobile app
+                </label>
+                <label>
+                    <input type="checkbox" name="interest" value = "Data" class="input-checkbox">
+                    Data science
+                </label>
+                <label>
+                    <input type="checkbox" name="interest" value = "AI" class="input-checkbox">
+                    Artificial intelligence
+                </label>
+                
+            </div>
+            <div class="form-group">
+                <legend>Your development experience</legend>
+                <label><input name="experience" type="radio" value="1" class="input-radio" checked>Less than 1 year</label>
+                <label><input name="experience" type="radio" value="2" class="input-radio">1-3 year</label>
+                <label><input name="experience" type="radio" value="3" class="input-radio">3-7 year</label>
+                <label><input name="experience" type="radio" value="4" class="input-radio">Over 7 year</label>
+            </div>
+            <div class="form-group">
+                <label for="wish">Your wish to novice programmers.</label>
+                <textarea name="wish" id="wish" class="input-textarea" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit" id="submit" class="button">
+                Submit
+            </button>
+
+        </form>
+    </div>
+
+<script src="index.js"></script>
+</body>
+
+</html>
